@@ -16,11 +16,14 @@ namespace TaskWebApp.Controllers
          */
         public void SignUpSignIn(string redirectUrl)
         {
+            
 			redirectUrl = redirectUrl ?? "/";
 
 			// Use the default policy to process the sign up / sign in flow
             HttpContext.GetOwinContext().Authentication.Challenge(new AuthenticationProperties { RedirectUri = redirectUrl });
             return;
+            
+
         }
 
         /*

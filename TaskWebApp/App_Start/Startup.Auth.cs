@@ -35,12 +35,12 @@ namespace TaskWebApp
 				new OpenIdConnectAuthenticationOptions
 				{
 					// Generate the metadata address using the tenant and policy information
-					MetadataAddress = String.Format(Globals.WellKnownMetadata, Globals.Tenant, Globals.DefaultPolicy),
+					MetadataAddress = String.Format("https://bugtracker.b2clogin.com/BugTracker.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signupsignin1", "BugTracker.onmicrosoft.com", "B2C_1_signupsignin1"),
 
 					// These are standard OpenID Connect parameters, with values pulled from web.config
-					ClientId = Globals.ClientId,
-					RedirectUri = Globals.RedirectUri,
-					PostLogoutRedirectUri = Globals.RedirectUri,
+					ClientId = "92f4d955-0517-4c91-ab3d-3bf69602bbe3",
+					RedirectUri = "https://hnguyen.azurewebsites.net",
+					PostLogoutRedirectUri = "https://hnguyen.azurewebsites.net",
 
 					// Specify the callbacks for each type of notifications
 					Notifications = new OpenIdConnectAuthenticationNotifications
