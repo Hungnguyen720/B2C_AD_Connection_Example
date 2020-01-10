@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 page_type: sample
 description: "The sample covers calling an OpenID Connect identity provider (Azure AD B2C) and acquiring a token from Azure AD B2C using MSAL."
@@ -186,3 +187,6 @@ Additional information regarding this sample can be found in our documentation:
 ## Questions & Issues
 
 Please file any questions or problems with the sample as a github issue. You can also post on [StackOverflow](https://stackoverflow.com/questions/tagged/azure-ad-b2c) with the tag `azure-ad-b2c`.
+=======
+# B2C_AD_Connection_Example
+>>>>>>> 54aaa8abe38100494cebddf832cd193135770978
